@@ -65,7 +65,7 @@
                         <a class="page-scroll" href="#contact">연락처</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="login.html">LOGIN</a>
+                        <a class="page-scroll" href="/login">LOGIN</a>
                     </li>
                 </ul>
             </div>

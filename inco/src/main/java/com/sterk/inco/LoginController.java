@@ -20,7 +20,7 @@ public class LoginController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
 	@RequestMapping(value = "/login")
-	public String home(Locale locale, Model model) {
+	public String login(Locale locale, Model model) {
 		logger.debug("=========== login page================");
 		
 		return "login";
