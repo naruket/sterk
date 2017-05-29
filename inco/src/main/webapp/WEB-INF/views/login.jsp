@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -34,6 +34,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <style>
+      body {
+        background : url("/resources/img/background.jpg") no-repeat top right;
+        display : flex;
+      }
+      .container {
+        align-self : center;
+        background-color : rgba(255,255,255,0.7);
+      }
+    </style>
+    
 </head>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -41,7 +53,7 @@
   <div class="container">
 
       <div class="omb_login">
-      	<h3 class="omb_authTitle">로그인 or <a href="#">회원가입</a></h3>
+      	<h3 class="omb_authTitle">로그인 or <a href="/join">회원가입</a></h3>
   		<div class="row omb_row-sm-offset-3 omb_socialButtons">
       	    <div class="col-xs-4 col-sm-2">
   		        <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
@@ -66,13 +78,13 @@
   		<div class="row omb_row-sm-offset-3 omb_loginOr">
   			<div class="col-xs-12 col-sm-6">
   				<hr class="omb_hrOr">
-  				<span class="omb_spanOr">or</span>
+  				<span class="omb_spanOr"> </span>
   			</div>
   		</div>
 
   		<div class="row omb_row-sm-offset-3">
   			<div class="col-xs-12 col-sm-6">
-  			    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+  			    <form class="omb_loginForm" action="/loginCheck" autocomplete="off" method="POST">
   					<div class="input-group">
   						<span class="input-group-addon"><i class="fa fa-user"></i></span>
   						<input type="text" class="form-control" name="username" placeholder="아이디">
@@ -97,7 +109,7 @@
   			</div>
   			<div class="col-xs-12 col-sm-3">
   				<p class="omb_forgotPwd">
-  					<a href="#">아이디/비밀번호 찾기</a>
+  					<a href="/findmember">아이디/비밀번호 찾기</a>
   				</p>
   			</div>
   		</div>

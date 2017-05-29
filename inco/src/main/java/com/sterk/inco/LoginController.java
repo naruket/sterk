@@ -28,16 +28,22 @@ public class LoginController {
 	
 	@RequestMapping(value = "/loginCheck")
 	public String loginCheck(HttpServletRequest request, HttpServletResponse response, Model model) {
-		if("admin".equals(request.getParameter("id")) && "welcome1".equals(request.getParameter("pwd"))) {
+		if("admin".equals(request.getParameter("username")) && "welcome1".equals(request.getParameter("password"))) {
 			Map<String, String> loginmap = new HashMap<String, String>();
 			loginmap.put("id", request.getParameter("id"));
 			loginmap.put("name", "Administrator");
 			request.getSession().setAttribute("logininfo", loginmap);
 			try {
 				logger.debug("=============login complete==============");
-				response.sendRedirect("loginComplete");
+				response.sendRedirect("/loginComplete");
 			} catch (IOException e) {
 				logger.debug("=============loginCheck error==============");
+				e.printStackTrace();
+			}
+		} else {
+			try {
+				response.sendRedirect("/login");
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
