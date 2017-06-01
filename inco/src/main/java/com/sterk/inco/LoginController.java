@@ -1,10 +1,10 @@
 package com.sterk.inco;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,10 +14,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.sterk.service.MemberService;
+
 @Controller
 public class LoginController {
 
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	
+	@Resource(name = "memberService")
+	private MemberService memberService;
 
 	@RequestMapping(value = "/login")
 	public String login(Locale locale, Model model) {
@@ -27,8 +32,8 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value = "/loginCheck")
-	public String loginCheck(HttpServletRequest request, HttpServletResponse response, Model model) {
-		if("admin".equals(request.getParameter("username")) && "welcome1".equals(request.getParameter("password"))) {
+	public String loginCheck(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+		/*if("admin".equals(request.getParameter("username")) && "welcome1".equals(request.getParameter("password"))) {
 			Map<String, String> loginmap = new HashMap<String, String>();
 			loginmap.put("id", request.getParameter("id"));
 			loginmap.put("name", "Administrator");
@@ -46,6 +51,19 @@ public class LoginController {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}*/
+
+		Map<String, Object> comm = new HashMap<String, Object>();
+		comm.put("username", request.getParameter("username"));
+		comm.put("password", request.getParameter("password"));
+		Map<String, Object> list = memberService.selectMember(comm);
+		if(list != null) {
+			Map<String, String> loginmap = new HashMap<String, String>();
+			loginmap.put("id", (String)list.get("id"));
+			loginmap.put("name", (String)list.get("name"));
+			request.getSession().setAttribute("logininfo", loginmap);
+			logger.debug((String) list.get("name"));
+			response.sendRedirect("/loginComplete");
 		}
 		return "login";
 	}
