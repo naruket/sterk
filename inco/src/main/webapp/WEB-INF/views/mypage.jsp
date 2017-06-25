@@ -36,10 +36,40 @@
 </head>
 
 <body>
+
     <div>
-        
+        <!-- top nav bar section -->
+        <div class="topnav">
+            <div>
+            </div>
+        </div>
+        <!-- Container under top nav bar -->
+        <div>
+            <!-- content vertical nav bar -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="">mp menu 1</a>
+                    </li>
+                    <li>
+                        <a href="">mp menu 2</a>
+                    </li>
+                    <li>
+                        <a href="">mp menu 3</a>
+                    </li>
+                    <li>
+                        <a href="">mp menu 4</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- content container -->
+            <div>
+            </div>
+        </div>
     </div>
 
+    <footer>
+    </footer>
 
 </body>
 </html>
