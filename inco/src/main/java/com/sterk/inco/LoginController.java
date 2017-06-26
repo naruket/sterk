@@ -76,4 +76,18 @@ public class LoginController {
 		model.addAttribute("name", ((Map<String, String>)request.getSession().getAttribute("logininfo")).get("name"));
 		return "loginComplete";
 	}
+	
+	@RequestMapping(value = "/join")
+	public String join() {
+		return "join";
+	}
+	
+	@RequestMapping(value = "/register")
+	public void register(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		String name = request.getParameter("name");
+		String username = request.getParameter("username");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		response.sendRedirect("/login");
+	}
 }

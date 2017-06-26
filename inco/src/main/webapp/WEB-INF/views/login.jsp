@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="/resources/magnific-popup.css" rel="stylesheet">
+    <link href="/resources/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="/resources/css/creative.min.css" rel="stylesheet">
@@ -42,6 +42,7 @@
       }
       .container {
         align-self : center;
+        width : 85%;
         background-color : rgba(255,255,255,0.7);
       }
     </style>
@@ -50,29 +51,26 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <body>
-  <div class="container">
-
-      <div class="omb_login">
-      	<h3 class="omb_authTitle">로그인 or <a href="/join">회원가입</a></h3>
-  		<div class="row omb_row-sm-offset-3 omb_socialButtons">
-      	    <div class="col-xs-4 col-sm-2">
-  		        <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
-  			        <i class="fa fa-facebook visible-xs"></i>
-  			        <span class="hidden-xs">Facebook</span>
-  		        </a>
-  	        </div>
-          	<div class="col-xs-4 col-sm-2">
-  		        <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
-  			        <i class="fa fa-twitter visible-xs"></i>
-  			        <span class="hidden-xs">Twitter</span>
-  		        </a>
-  	        </div>
-          	<div class="col-xs-4 col-sm-2">
-  		        <a href="#" class="btn btn-lg btn-block omb_btn-google">
-  			        <i class="fa fa-google-plus visible-xs"></i>
-  			        <span class="hidden-xs">Google+</span>
-  		        </a>
-  	        </div>
+	<div class="container">
+		<div class="omb_login">
+			<h3 class="omb_authTitle">로그인 or <a href="/join">회원가입</a></h3>
+			
+  			<div class="row omb_row-sm-offset-3 omb_socialButtons">
+      	    	<div class="col-xs-4 col-sm-2">
+  		        	<a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+  			        	<i class="fa fa-facebook"></i>
+  		        	</a>
+  	        	</div>
+          		<div class="col-xs-4 col-sm-2">
+  		        	<a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+	  			        <i class="fa fa-twitter"></i>
+  			        </a>
+  	        	</div>
+	          	<div class="col-xs-4 col-sm-2">
+	  		        <a href="#" class="btn btn-lg btn-block omb_btn-google">
+	  			        <i class="fa fa-google-plus"></i>
+	  		        </a>
+	  	        </div>
   		</div>
 
   		<div class="row omb_row-sm-offset-3 omb_loginOr">
