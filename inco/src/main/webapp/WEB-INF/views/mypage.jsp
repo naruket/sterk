@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INCO - 인터넷 코인 오락실</title>
+    <title>Account overview - INCO</title>
     <link href="/resources/img/favicon.ico" rel="shortcut icon">
 
     <!-- Bootstrap Core CSS -->
@@ -36,34 +36,53 @@
 </head>
 
 <body>
-
+    <!--  -->
     <div>
-        <!-- top nav bar section -->
+        <!-- Main top navbar section -->
         <div class="topnav">
+            <!-- Navbar head -->
             <div>
+
             </div>
-        </div>
-        <!-- Container under top nav bar -->
-        <div>
-            <!-- content vertical nav bar -->
+
+            <!--  -->
             <div>
                 <ul>
-                    <li>
-                        <a href="">mp menu 1</a>
-                    </li>
-                    <li>
-                        <a href="">mp menu 2</a>
-                    </li>
-                    <li>
-                        <a href="">mp menu 3</a>
-                    </li>
-                    <li>
-                        <a href="">mp menu 4</a>
-                    </li>
+                    <li></li>
                 </ul>
             </div>
-            <!-- content container -->
+        </div>
+
+        <!-- Section below the navbar -->
+        <div>
+            <!-- Banner section -->
             <div>
+                Banner Section
+            </div>
+
+            <!-- Container section below the banner -->
+            <div>
+                <!-- Content vertical sidebar -->
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">Account overview</a>
+                        </li>
+                        <li>
+                            <a href="">Edit profile</a>
+                        </li>
+                        <li>
+                            <a href="">Change password</a>
+                        </li>
+                        <li>
+                            <a href="">Undefined</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Content container -->
+                <div>
+                </div>
             </div>
         </div>
     </div>
