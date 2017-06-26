@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Account overview - INCO</title>
+    <title>Mypage - INCO</title>
     <link href="/resources/img/favicon.ico" rel="shortcut icon">
 
     <!-- Bootstrap Core CSS -->
@@ -40,15 +40,32 @@
     <div>
         <!-- Main top navbar section -->
         <div class="topnav">
-            <!-- Navbar head -->
+            <!-- Navbar header -->
             <div>
-
+                <a href="">INCO ROGO</a>
             </div>
 
-            <!--  -->
+            <!-- Navbar right -->
             <div>
                 <ul>
-                    <li></li>
+                    <!--  -->
+                    <li>
+                        <a href="">
+                            
+                            <span>User nickname</span>
+                            <!-- Drop down menu -->
+                            <ul>
+                                <!-- Account overview -->
+                                <li>
+                                    <a href="">Mypage</a>
+                                </li>
+                                <!-- Logout -->
+                                <li>
+                                    <a href="">Log out</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
