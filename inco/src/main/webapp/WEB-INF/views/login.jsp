@@ -42,7 +42,10 @@
       }
       .container {
         align-self : center;
-        width : 85%;
+		margin-top: 30px;
+        margin: 0 auto;
+        width: 330px;
+        padding: 40px 40px;
         background-color : rgba(255,255,255,0.7);
       }
     </style>
@@ -55,18 +58,18 @@
 		<div class="omb_login">
 			<h3 class="omb_authTitle">로그인 or <a href="/join">회원가입</a></h3>
 			
-  			<div class="row omb_row-sm-offset-3 omb_socialButtons">
-      	    	<div class="col-xs-4 col-sm-2">
+  			<div class="row omb_socialButtons">
+      	    	<div class="col-xs-4 col-sm-4">
   		        	<a href="#" class="btn btn-lg btn-block omb_btn-facebook">
   			        	<i class="fa fa-facebook"></i>
   		        	</a>
   	        	</div>
-          		<div class="col-xs-4 col-sm-2">
+          		<div class="col-xs-4 col-sm-4">
   		        	<a href="#" class="btn btn-lg btn-block omb_btn-twitter">
 	  			        <i class="fa fa-twitter"></i>
   			        </a>
   	        	</div>
-	          	<div class="col-xs-4 col-sm-2">
+	          	<div class="col-xs-4 col-sm-4">
 	  		        <a href="#" class="btn btn-lg btn-block omb_btn-google">
 	  			        <i class="fa fa-google-plus"></i>
 	  		        </a>
@@ -80,8 +83,8 @@
   			</div>
   		</div>
 
-  		<div class="row omb_row-sm-offset-3">
-  			<div class="col-xs-12 col-sm-6">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-12">
   			    <form class="omb_loginForm" action="/loginCheck" autocomplete="off" method="POST">
   					<div class="input-group">
   						<span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -99,14 +102,12 @@
   				</form>
   			</div>
       	</div>
-  		<div class="row omb_row-sm-offset-3">
-  			<div class="col-xs-12 col-sm-3">
-  				<label class="checkbox">
-  					<input type="checkbox" value="remember-me">로그인 상태 유지
-  				</label>
+  		<div class="row">
+  		  	<div class="visible-xs col-xs-12" style="line-height:65%">
+  				<br>
   			</div>
-  			<div class="col-xs-12 col-sm-3">
-  				<p class="omb_forgotPwd">
+  			<div class="col-xs-12 col-sm-12">
+  				<p class="omb_forgotPwd text-right">
   					<a href="/findmember">아이디/비밀번호 찾기</a>
   				</p>
   			</div>
