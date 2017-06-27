@@ -80,8 +80,8 @@
         .main-center{
          	margin-top: 30px;
          	margin: 0 auto;
-         	max-width: 330px;
-            padding: 40px 40px;
+         	max-width: 350px;
+            padding: 30px 30px;
 
         }
 
@@ -100,15 +100,11 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <body>
-    <div class="container">
+    <div class="container" style="align-self : center">
         <div class="row main">
-            <div class="panel-heading">
-                <div class="panel-title text-center">
-                    <h1 class="title">회원가입</h1>
-                </div>
-            </div>
             <div class="main-login main-center">
                 <form class="form-horizontal" method="post" action="#" id="registerForm">
+                <h3 class="text-center"><strong>회원가입</strong></h3>
                     <div class="form-group">
                         <label for="name" class="cols-sm-2 control-label">이름</label>
                         <div class="cols-sm-10">
@@ -160,7 +156,7 @@
                     </div>
 
                     <div class="form-group ">
-                        <button type="button" id="submit" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                        <button type="button" id="submit" class="btn btn-primary btn-lg btn-block login-button">회원가입</button>
                     </div>
                 </form>
             </div>

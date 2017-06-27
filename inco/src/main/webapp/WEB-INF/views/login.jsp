@@ -44,19 +44,18 @@
         align-self : center;
 		margin-top: 30px;
         margin: 0 auto;
-        width: 330px;
-        padding: 40px 40px;
+        width: 350px;
+        padding: 30px 30px;
         background-color : rgba(255,255,255,0.7);
       }
     </style>
     
 </head>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <body>
 	<div class="container">
 		<div class="omb_login">
-			<h3 class="omb_authTitle">로그인 or <a href="/join">회원가입</a></h3>
+			<h3 class="omb_authTitle"><strong>로그인 or <a href="/join">회원가입</a></strong></h3>
 			
   			<div class="row omb_socialButtons">
       	    	<div class="col-xs-4 col-sm-4">

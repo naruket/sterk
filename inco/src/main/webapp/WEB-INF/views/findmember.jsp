@@ -36,51 +36,26 @@
 	<style>
       body {
         background : url("/resources/img/background.jpg") no-repeat top right;
+        display : flex;
+      }
+	  .container {
+        align-self : center;
+		margin-top: 30px;
+        margin: 0 auto;
+        width: 350px;
+        padding: 30px 30px;
+        background-color : rgba(255,255,255,0.7);
       }
     </style>
 </head>
 <body>
-<nav id="mainNav" class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">INCO</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="index.html #about">알아보기</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">서비스</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">카테고리</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">연락처</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="login.html">LOGIN</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-	<div class="container" style="align-self : center ; background-color : rgba(255,255,255,0.7)">
+	<div class="container">
 
       <div class="omb_login">
-      	<h3 class="omb_authTitle">아이디를 잊어 버리셨나요?</h3>
-		<hr>
-  		<div class="row omb_row-sm-offset-3">
-  			<div class="col-xs-12 col-sm-6">
+      	<h3 class="omb_authTitle"><strong>아이디를 잊어버리셨나요?</strong></h3>
+		<hr style="margin-top:-5px">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-12">
   			    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
   					<div class="input-group">
   						<span class="input-group-addon"><i class="fa fa-phone"></i></span>
@@ -92,57 +67,19 @@
   				</form>
   			</div>
       	</div>
-  		<div class="row omb_row-sm-offset-3">
-  			<div class="col-xs-12 col-sm-6">
-  				<p class="omb_forgotPwd">
-  					<a href="findpw.html">비밀번호 찾기</a>
+  		<div class="row">
+  			<div class="visible-sx col-s-12" style="line-height:65%">
+  			<br>
+  			</div>
+  			<div class="col-xs-12 col-sm-12">
+  				<p class="omb_forgotPwd text-right">
+  					<a href="/findpw">비밀번호 찾기</a>
   				</p>
   			</div>
   		</div>
   	</div>
 
   </div>
-	<!-- md lg footer -->
-	<footer class="text-center navbar-fixed-bottom visible-md visible-lg" style="background-color: #A4A4A4 ; color: #ffffff">
-		<div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Kyungbook Natinal University
-                            <br>Daegu, sangyeok dong</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Social media</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://gmail.com" class="btn-social btn-outline"><span class="sr-only">Gmail</span><i class="fa fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://linkedin.com" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About us</h3>
-                        <p>STERK let world be STERK</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; GITAE JJANG JJANG GOD
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/resources/js/bootstrap.js"></script>
 </body>
