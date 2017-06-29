@@ -8,7 +8,6 @@
 </head>
 <body>
 <h1>This is Debug Page</h1>
-hello ${id}<br>
-my name is ${name}
+<a href="/account/mypage">my page</a>
 </body>
 </html>

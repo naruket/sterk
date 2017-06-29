@@ -71,9 +71,10 @@ public class LoginController {
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/loginComplete")
 	public String loginComplete(HttpServletRequest request, Model model) {
-		
+		/*
 		model.addAttribute("id", ((Map<String, String>)request.getSession().getAttribute("logininfo")).get("id"));
 		model.addAttribute("name", ((Map<String, String>)request.getSession().getAttribute("logininfo")).get("name"));
+		*/
 		return "loginComplete";
 	}
 	
@@ -89,5 +90,17 @@ public class LoginController {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		response.sendRedirect("/login");
+	}
+	@RequestMapping(value = "/findmember")
+	public String findmember(){
+		return "findmember";
+	}
+	@RequestMapping(value = "/findpw")
+	public String findpw(){
+		return "findpw";
+	}
+	@RequestMapping(value ="/account/mypage")
+	public String mypage(){
+		return "account/mypage";
 	}
 }
