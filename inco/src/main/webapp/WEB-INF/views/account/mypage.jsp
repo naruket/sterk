@@ -49,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">INCO ROGO</a>
+                    <a class="navbar-brand" href="/../home">INCO ROGO</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,7 +60,7 @@
                         <li role="separator" class="divider"></li>
                         <!-- Seperator -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nickname<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nickname <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Mypage</a></li>
                                 <li role="separator" class="divider"></li>
@@ -110,6 +110,20 @@
 
     <footer>
     </footer>
+
+    <!-- jQuery -->
+    <script src="/resources/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/resources/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/resources/js/scrollreveal.min.js"></script>
+    <script src="/resources/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/resources/js/creative.min.js"></script>
 
 </body>
 </html>
