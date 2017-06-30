@@ -28,6 +28,7 @@
 
     <!-- Theme CSS -->
     <link href="/resources/css/creative.min.css" rel="stylesheet">
+    <link href="/resources/css/footer.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -154,9 +155,46 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
-            <!-- 승주가 만든 Footer추가 -->
-        </footer>
+<footer class="text-center" style="background-color: #A4A4A4 ; color: #ffffff"> <!-- 푸터-->
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Kyungbook Natinal University
+                            <br>Daegu, sangyeok dong</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Social media</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://gmail.com" class="btn-social btn-outline"><span class="sr-only">Gmail</span><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About us</h3>
+                        <p>sterk let world sterk</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Sterk present INCO 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     </div>
     <!-- /.container -->
