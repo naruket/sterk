@@ -151,11 +151,11 @@
             </div>
         </div>
         <!-- /.row -->
-
         <hr>
-
-        <!-- Footer -->
-<footer class="text-center" style="background-color: #A4A4A4 ; color: #ffffff"> <!-- 푸터-->
+    </div>
+    <div>
+    <!-- Footer -->
+	<footer class="text-center" style="background-color: #A4A4A4 ; color: #ffffff"> <!-- 푸터-->
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -195,7 +195,6 @@
             </div>
         </div>
     </footer>
-
     </div>
     <!-- /.container -->
 
