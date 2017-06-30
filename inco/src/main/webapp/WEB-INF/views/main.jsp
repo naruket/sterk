@@ -180,7 +180,7 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About us</h3>
-                        <p>sterk let world sterk</a>.</p>
+                        <p>sterk let world sterk</p>
                     </div>
                 </div>
             </div>
