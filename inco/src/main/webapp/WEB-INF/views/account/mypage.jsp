@@ -11,7 +11,6 @@
     <meta name="author" content="">
 
     <title>Mypage - INCO</title>
-    <link href="/resources/img/favicon.ico" rel="shortcut icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
@@ -39,38 +38,50 @@
     <!-- Section except footer section -->
     <div>
         <!-- Main top navbar section -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">INCO ROGO</a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li role="separator" class="divider"></li>
-                        <!-- Seperator -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nickname<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Mypage</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Log out</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+<nav class="navbar navbar-default"> <!-- 네이게이션 바 -->
+      <div class="container-fluid">
+        <div class="navbar-header">	<!-- 네이게이션 헤더 -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://localhost:8080/">INCO</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav"> <!-- 네비바 unordered list -->
+           <li class="active"><a href="index.html">introduce<span class="sr-only"></span></a></li> 
+           <li><a href="randomBox.html">random box</a></li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">game<span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li><a href="game.html?gameName=1">game1</a></li>
+               <li><a href="game.html?gameName=2">game2</a></li>
+               <li><a href="game.html?gameName=3">game3</a></li>
+             </ul>
+           </li>
+          </ul>
+          <form class="navbar-form navbar-left"> <!-- 네비바 좌측에 검색창 추가 -->
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="input">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+          </form>
+		<ul class="nav navbar-nav navbar-right">
+		   <li><p class="navbar-text hidden-xs">Already have an account?</li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li><a href="../login">Login</a></li>
+               <li><a href="../join">Register</a></li>
+             </ul>
+           </li>
+		</ul>
+        </div>
+      </div>
+    </nav>
 
         <!-- Section below the navbar -->
         <div >
@@ -110,6 +121,11 @@
 
     <footer>
     </footer>
+	<!-- jQuery -->
+    <script src="/resources/js/jquery.min.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/resources/js/bootstrap.min.js"></script>
+	
 </body>
 </html>
