@@ -16,6 +16,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Temparary CSS & JS for mypage.jsp -->
+    <link href="/resources/css/mypage.css" rel="stylesheet">
+    <script src="/resources/js/mypage.js"></script>
+
     <!-- Custom Fonts -->
     <link href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -49,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/../home">INCO ROGO</a>
+                    <a class="navbar-brand" href="/../home">INCO</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,18 +77,20 @@
         </nav>
 
         <!-- Section below the navbar -->
-        <div >
+        <div class="container">
             <!-- Banner section -->
-            <div>
+            <!--
+            <div class="container-banner">
                 Banner Section
             </div>
-
+            -->
+            
             <!-- Container section below the banner -->
-            <div class="container">
+            <div class="container-content">
                 <div class="col-sm-3 hidden-xs">
                     <!-- vertical sidebar -->
                     <div class="sidebar">
-                        <ul class="nav-tabs nav-stacked">
+                        <ul class="sidebar-menu">
                             <li class="active"><a href="#">Account overview</a></li>
                             <li><a href="#">Edit profile</a></li>
                             <li><a href="#">Change password</a></li>
@@ -96,7 +102,7 @@
                 <!-- Content container -->
                 <div class="col-sm-9">
                     <div class="content">
-                        <div class="page-header">
+                        <div class="content-header">
                             <h1>Account overview</h1>
                         </div>
 
