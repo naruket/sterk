@@ -65,7 +65,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nickname <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Mypage</a></li>
+                                <li><a href="/account/mypage">Mypage</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Log out</a></li>
                             </ul>
@@ -91,7 +91,7 @@
                     <!-- vertical sidebar -->
                     	<div class="sidebar">
                         	<ul class="sidebar-menu">
-                            	<li class="active"><a href="#">Account overview</a></li>
+                            	<li class="active"><a href="/account/mypage">Account overview</a></li>
                             	<li><a href="/account/edit">Edit profile</a></li>
 	                            <li><a href="#">Change password</a></li>
 	                            <li><a href="#">Undefined 1</a></li>
@@ -109,25 +109,25 @@
 
                         	<!-- Content section -->
 	                        <div class="profile">
-	                          	<h3 class="">Profile</h3>
-	                          		<form>
-	                          			<div class="form-group">
-	                          				<label class="control-label">ID</label>
-	                          				<p class="form-control-static" id="profile-id">User ID as nickname</p>
-	                          			</div>
-	                          			<div class="form-group">
-	                          				<label class="control-label">Email</label>
-	                          				<p class="form-control-static" id="profile-email">email@email.com</p>
-	                          			</div>
-	                          			<div class="form-group">
-	                          				<label class="control-label">Realname</label>
-	                          				<p class="form-control-static" id="profile-realname">홍길동</p>
-	                          			</div>
-	                          			<div class="form-group">
-	                          				<label class="control-label">Phone number</label>
-	                          				<p class="form-control-static" id="profile-phonenumber">010-1234-5678</p>
-	                          			</div>
-	                          		</form>
+	                        	<h3 class="">Profile</h3>
+	                          	<form>
+	                          		<div class="form-group">
+	                          			<label class="control-label">ID</label>
+	                          			<p class="form-control-static" id="profile-id">User ID as nickname</p>
+	                          		</div>
+	                          		<div class="form-group">
+	                          			<label class="control-label">Email</label>
+	                          			<p class="form-control-static" id="profile-email">email@email.com</p>
+	                          		</div>
+	                          		<div class="form-group">
+	                          			<label class="control-label">Realname</label>
+	                          			<p class="form-control-static" id="profile-realname">홍길동</p>
+	                          		</div>
+	                          		<div class="form-group">
+	                          			<label class="control-label">Phone number</label>
+	                          			<p class="form-control-static" id="profile-phonenumber">010-1234-5678</p>
+	                          		</div>
+	                          	</form>
 	                          	<a href="/account/edit" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Edit profile</a>
 	                         </div>
                     	</div>
