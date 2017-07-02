@@ -13,13 +13,13 @@
     <title>Mypage - INCO</title>
     <link href="/resources/img/favicon.ico" rel="shortcut icon">
 
-    <!-- Bootstrap Core CSS -->
+	<!-- Bootstrap Core CSS -->
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Temparary CSS & JS for mypage.jsp -->
+	<!-- Temparary CSS & JS for mypage.jsp -->
     <link href="/resources/css/mypage.css" rel="stylesheet">
     <script src="/resources/js/mypage.js"></script>
-
+    
     <!-- Custom Fonts -->
     <link href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -29,7 +29,7 @@
     <link href="/resources/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="resources/css/creative.min.css" rel="stylesheet">
+    <link href="/resources/css/creative.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,8 +43,8 @@
     <!-- Section except footer section -->
     <div>
         <!-- Main top navbar section -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/../home">INCO</a>
+                    <a class="navbar-brand" href="/home">INCO</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,7 +61,6 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 2</a></li>
-                        <li role="separator" class="divider"></li>
                         <!-- Seperator -->
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nickname <span class="caret"></span></a>
@@ -77,7 +76,7 @@
         </nav>
 
         <!-- Section below the navbar -->
-        <div class="container">
+        <div class="content-wrapper">
             <!-- Banner section -->
             <!--
             <div class="container-banner">
@@ -86,30 +85,54 @@
             -->
             
             <!-- Container section below the banner -->
-            <div class="container-content">
-                <div class="col-sm-3 hidden-xs">
+            <div class="container container-content">
+            	<div class="row">
+            		<div class="col-sm-3 hidden-xs">
                     <!-- vertical sidebar -->
-                    <div class="sidebar">
-                        <ul class="sidebar-menu">
-                            <li class="active"><a href="#">Account overview</a></li>
-                            <li><a href="#">Edit profile</a></li>
-                            <li><a href="#">Change password</a></li>
-                            <li><a href="#">Undefined</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Content container -->
-                <div class="col-sm-9">
-                    <div class="content">
-                        <div class="content-header">
-                            <h1>Account overview</h1>
-                        </div>
+                    	<div class="sidebar">
+                        	<ul class="sidebar-menu">
+                            	<li class="active"><a href="#">Account overview</a></li>
+                            	<li><a href="/account/edit">Edit profile</a></li>
+	                            <li><a href="#">Change password</a></li>
+	                            <li><a href="#">Undefined 1</a></li>
+	                            <li><a href="#">Undefined 2</a></li>
+	                            <li><a href="#">Undefined 3</a></li>
+                        	</ul>
+                    	</div>
+                	</div>
+                	
+                	<div class="col-sm-9">
+                    	<div class="content">
+                        	<div class="content-header">
+                            	<h1>Account overview</h1>
+                        	</div>
 
-                        <!-- Content section -->
-
-                    </div>
-                </div>
+                        	<!-- Content section -->
+	                        <div class="profile">
+	                          	<h3 class="">Profile</h3>
+	                          		<form>
+	                          			<div class="form-group">
+	                          				<label class="control-label">ID</label>
+	                          				<p class="form-control-static" id="profile-id">User ID as nickname</p>
+	                          			</div>
+	                          			<div class="form-group">
+	                          				<label class="control-label">Email</label>
+	                          				<p class="form-control-static" id="profile-email">email@email.com</p>
+	                          			</div>
+	                          			<div class="form-group">
+	                          				<label class="control-label">Realname</label>
+	                          				<p class="form-control-static" id="profile-realname">홍길동</p>
+	                          			</div>
+	                          			<div class="form-group">
+	                          				<label class="control-label">Phone number</label>
+	                          				<p class="form-control-static" id="profile-phonenumber">010-1234-5678</p>
+	                          			</div>
+	                          		</form>
+	                          	<a href="/account/edit" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Edit profile</a>
+	                         </div>
+                    	</div>
+                	</div>
+            	</div>                
             </div>
         </div>
     </div>
