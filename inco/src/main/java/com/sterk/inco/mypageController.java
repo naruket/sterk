@@ -34,5 +34,11 @@ public class mypageController {
 
 		return "account/mypage";
 	}
-
+	
+	@RequestMapping(value = "/account/edit", method = RequestMethod.GET)
+	public String edit(Locale locale, Model model) {
+		logger.info("moved to account/edit page");
+		
+		return "account/edit";
+	}
 }
