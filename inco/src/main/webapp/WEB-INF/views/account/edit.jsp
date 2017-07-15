@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mypage - INCO</title>
+    <title>Edit profile - INCO</title>
     <link href="/resources/img/favicon.ico" rel="shortcut icon">
 
 	<!-- Bootstrap Core CSS -->
@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <!-- Section except footer section -->
+	<!-- Section except footer section -->
     <div class="wrap">
         <!-- Main top navbar section -->
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -91,8 +91,8 @@
                     <!-- vertical sidebar -->
                     	<div class="sidebar">
                         	<ul class="sidebar-list">
-                            	<li class="active"><a href="/account/mypage">Account overview</a></li>
-                            	<li><a href="/account/edit">Edit profile</a></li>
+                            	<li><a href="/account/mypage">Account overview</a></li>
+                            	<li class="active"><a href="/account/edit">Edit profile</a></li>
 	                            <li><a href="#">Change password</a></li>
 	                            <li><a href="#">Undefined 1</a></li>
 	                            <li><a href="#">Undefined 2</a></li>
@@ -104,31 +104,33 @@
                 	<div class="col-sm-9">
                     	<div class="content">
                         	<div class="content-header">
-                            	<h1>Account overview</h1>
+                            	<h1>Edit profile</h1>
                         	</div>
 
                         	<!-- Content section -->
 	                        <div class="profile">
-	                        	<h3 class="">Profile</h3>
-	                          	<form>
+	                        	<form name="profile" method="post" action="" id="profile" role="form">
 	                          		<div class="form-group">
-	                          			<label class="control-label">ID</label>
-	                          			<p class="form-control-static" id="profile-id">User ID as nickname</p>
+	                          			<label class="control-label" for="profile_id">ID</label>
+	                          			<input type="id" id="profile_id" name="profile[id]" required="" data-rule-remote="" class="form-control valid" data-msg-required="" data-msg-email="" data-msg-remote="" value="">
 	                          		</div>
 	                          		<div class="form-group">
-	                          			<label class="control-label">Email</label>
-	                          			<p class="form-control-static" id="profile-email">email@email.com</p>
+	                          			<label class="control-label" for="profile_email">Email</label>
+	                          			<input type="email" id="profile_email" name="profile[email]" required="" data-rule-remote="" class="form-control valid" data-msg-required="" data-msg-email="" data-msg-remote="" value="">
 	                          		</div>
 	                          		<div class="form-group">
-	                          			<label class="control-label">Realname</label>
-	                          			<p class="form-control-static" id="profile-realname">홍길동</p>
+	                          			<label class="control-label" for="profile_realname">Realname</label>
+	                          			<input type="realname" id="profile_realname" name="profile[realname]" required="" data-rule-remote="" class="form-control valid" data-msg-required="" data-msg-email="" data-msg-remote="" value="">
 	                          		</div>
 	                          		<div class="form-group">
-	                          			<label class="control-label">Phone number</label>
-	                          			<p class="form-control-static" id="profile-phonenumber">010-1234-5678</p>
+	                          			<label class="control-label" for="profile_phonenumber">Phone number</label>
+	                          			<input type="phonenumber" id="profile_phonenumber" name="profile[phonenumber]" required="" data-rule-remote="" class="form-control valid" data-msg-required="" data-msg-email="" data-msg-remote="" value="">
+	                          		</div>
+	                          		<div class="">
+	                          			<button>Save profile</button>
+	                          			<a href="/account/mypage">cancel</a>
 	                          		</div>
 	                          	</form>
-	                          	<a href="/account/edit" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Edit profile</a>
 	                         </div>
                     	</div>
                 	</div>
